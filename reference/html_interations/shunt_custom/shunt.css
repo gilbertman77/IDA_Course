@@ -1,0 +1,101 @@
+.title {
+  color: rgb(68, 141, 160);
+  font-size: 48px;
+  font-family: arial;
+  margin: auto;
+  text-align: center;
+}
+
+.overview {
+  max-width: 300px;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.rpiOut {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background: rgba(20, 19, 19, 0.7);
+  max-width: 600px;
+  color: rgb(171, 186, 233);
+  font-size: 24px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+
+
+.tbl {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background: rgba(20, 19, 19, 0.7);
+  //max-width: 200px;
+  color: rgb(171, 186, 233);
+  font-size: 18px;
+  //margin: 30px;
+  padding: 8px;
+  text-align: left;
+  font-family: arial;
+  border: 1px solid black;
+  width: 100%;
+}
+
+.ipt[type=text] {
+  border: 2px solid rgba(20, 19, 19, 0.7);
+  background: rgba(238, 233, 233, 0.082);
+  border-radius: 4px;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-family: arial;
+  padding: 8px;
+  max-width: 100px;
+  animation: background-fade 0.5s;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 300px;
+  font-size: 18px;
+  
+}
+
+.btn {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  font-size: 18px;
+}
+.btn:hover
+{opacity: 0.7;}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+     
+@keyframes background-fade {
+    99.9% {
+        background:rgb(236, 145, 129);
+    }
+
+}

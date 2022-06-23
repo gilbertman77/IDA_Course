@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <h1 class="title">IOT Raspberry Pi</h1>
+  <div class="overview">Real time data updates!</div>
+  <div class="rpiOut">Temp: <span id="temp"></span></div>
+  <div class="rpiOut">Pressure: <span id="pressure"></span></div>
+  <div class="rpiOut">Humidity: <span id="humidity"></span></div>
+  <div class="rpiOut">Accel X: <span id="x"></span></div>
+  <div class="rpiOut">Accel Y: <span id="y"></span></div>
+  <div class="rpiOut">Accel Z: <span id="z"></span></div>
+  <div class="rpiOut">Message: <span id="message"></span></div>
+  <br>
+  <div class="check">Display On: <input type="checkbox" id="messageOn" onclick="updateMessageOn()"></div>
+  <div class="check">Display Message: <input type="checkbox" id="messageMode" onclick="updateMessageMode()"></div>
+  <div class="check">Display Metric: <input type="checkbox" id="messageUnits" onclick="updateMessageUnits()"></div>
+  <br>
+  <div class=box>
+    <p>New Message:
+      <br>
+      <textarea id="user_message"></textarea>
+    </p>
+    <button onclick="updateMessage()">Update Message to Firebase</button>
+  </div>
+  <p id="humidity_gauge"></p>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-database.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.4/raphael-min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/justgage/1.2.9/justgage.min.js"></script>
+<!--
+  <script src="script/raphael.min.js"></script>
+  <script src="script/justgage.js"></script>
+-->
+  <script src="script/iot.js"></script>
+</body>
+  
+</html>

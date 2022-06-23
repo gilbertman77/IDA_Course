@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<link href="iot.css" rel="stylesheet" type="text/css" />
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-database.js"></script>
+	<script src="script/raphael.min.js"></script>
+  <script src="script/justgage.js"></script>
+</head>
+
+<body>
+
+	<h1 class="title">IOT Raspberry Pi</h1>
+
+	<div class="overview">Real time data updates!</div>
+	<br>
+  <div class="rpiOut">Temp: <span id="tempType"></span></div>
+  <br>
+  <div class="rpiOut">Pressure: <span id="pressureType"></span></div>
+  <br>
+  <div class="rpiOut">Humidity: <span id="humidityType"></span></div>
+  <br>
+  <div class="rpiOut">Accel X: <span id="xType"></span></div>
+  <br>
+  <div class="rpiOut">Accel Y: <span id="yType"></span></div>
+  <br>
+  <div class="rpiOut">Accel Z: <span id="zType"></span></div>
+  <br>
+  <div class="rpiOut">Message: <span id="messageType"></span></div>
+ 
+  <br>  
+  <div class="check">Display On: <input type="checkbox" id="messageOn" onclick="updateMessageOn()"></div>
+
+  <div class="check">Display Message: <input type="checkbox" id="messageMode" onclick="updateMessageMode()"></div>
+
+  <div class="check">Display Metric: <input type="checkbox" id="messageUnits" onclick="updateMessageUnits()"></div>
+  <div id="comments"></div>
+  <br>
+
+  <p>New Message: <input type="text" id="message"></p>
+  <button onclick="updateMessage()">Update Message to Firebase</button>
+
+  <br>
+  <br>
+  <div id="gauge1"></div>
+  <div id="gauge2"></div>
+  <div id="gauge3"></div>
+  <br>
+  <br>
+  </body>
+</html>
+
+
+	<script src="script/iot.js">
+	</script>

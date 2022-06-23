@@ -1,0 +1,52 @@
+{
+  "iot": {
+    "humidity": 43,
+    "message": "Hi mate!",
+    "message_mode": "msg",
+    "message_on": true,
+    "message_units": "standard",
+    "pressure": 999,
+    "temp": 30,
+    "x": -0.1,
+    "y": 0.9,
+    "z": 0.4
+  },
+  "iot_team1": {
+    "team_name": "nothing"
+  },
+  "iot_team2": {
+    "team_name": "nothing"
+  },
+  "iot_team3": {
+    "team_name": "nothing"
+  },
+  "iot_team4": {
+    "team_name": "nothing"
+  },
+  "iot_team5": {
+    "team_name": "nothing"
+  },
+  "iot_team6": {
+    "team_name": "nothing"
+  },
+  "iot_team7": {
+    "team_name": "nothing"
+  },
+  "iot_team8": {
+    "team_name": "nothing"
+  },
+  "iot_team9": {
+    "team_name": "nothing"
+  },
+  "shunt": {
+    "Coin over 50 years old": "no",
+    "Green sticker": "no",
+    "Pair of scissors": "no",
+    "Paperclip": "no",
+    "Pen with red ink": "no",
+    "Pencil sharpener": "no",
+    "Piece of fruit": "no",
+    "Recycle Logo": "no",
+    "Word DATA in a book": "no"
+  }
+}

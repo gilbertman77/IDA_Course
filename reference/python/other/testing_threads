@@ -1,0 +1,80 @@
+import time
+import threading
+from threading import Thread
+
+#from thread import Thread
+
+
+#from sense_hat import SenseHat
+import pyrebase
+from random import randrange
+import time
+
+#  Create Sense Hat instance
+#sense = SenseHat()
+
+
+# Define Colors
+blue = (0, 0, 255)
+yellow = (255, 255, 0)
+green = (0, 255, 0)
+red = (255, 0, 0)
+
+#  Configure Firebase Connection
+config = {
+    "apiKey": "",
+    "authDomain": "",
+    # THIS MUST BE UPDATED PER YOUR FIREBASE DATABASE
+    # This is the database URL from the Realtime DB screen in Firebase
+    "databaseURL": "https://appdata-b53a0-default-rtdb.firebaseio.com/",
+    # THIS MUST BE UPDATED PER YOUR FIREBASE DATABASE
+    # This is the node which you will be "looking into" to read/write data
+    "storageBucket": ""
+}
+my_node = "shunt"
+
+# Connect to Firebase
+firebase = pyrebase.initialize_app(config)
+#db = firebase.database()
+db = firebase.database()
+
+finding = "Starting"
+e = threading.Event()
+stopper = False
+
+def stream_handler(message):
+    #e.set()
+    global finding
+    global stopper
+    stopper = True
+    finding = 0;
+    my_data = db.child(my_node).get().val()
+    for key in my_data:
+        print(key, my_data[key])
+    finding = len(my_data)
+    print(finding)
+    time.sleep(2)
+    #e.clear()
+    stopper = False
+
+#my_stream = dbRef1.child("posts").stream(stream_handler)
+my_stream = db.child(my_node).stream(stream_handler)
+
+def print_finding():
+    global stopper
+    global finding
+    while True:
+    #while not e.isSet():
+        time.sleep(1)
+        if not stopper:
+            print(finding)
+    
+def main():
+    print("I am main")
+    #t = thread.start_new_thread(stream_handler, tuple())
+    #t= Thread.start_new_thread(print_finding, tuple())
+    x = threading.Thread(target=print_finding)
+    x.start()
+    
+if __name__ == "__main__":
+    main()

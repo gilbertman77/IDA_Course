@@ -1,0 +1,71 @@
+h1 {
+  color: blue;
+  text-decoration: underline overline black;
+  text-align: center;
+  background: white;
+  border: 1px black solid;
+}
+
+h2 {
+  color: gray;
+}
+ 
+body {
+  color: rgb(11,22,99);
+  background-color: #c8ffff;
+  background-image:url('https://cdn.pixabay.com/photo/2017/01/10/23/01/seo-1970475_960_720.png');
+  background-repeat: repeat;
+	background-position:center;
+  background-size:50px;
+  font:  oblique 300 20px Helvetica, sans-serif;
+  
+}
+
+.box-1 {
+    background-color: #e3e3e3;
+    color: #FFFFFF;
+    border: 1px black solid;
+    border-radius:  15px;
+    margin: 5px;
+    padding: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.box-1 ul{
+  padding-left: 60px;
+  list-style: square;
+}
+
+.box-1 li{
+  padding-bottom: 6px;
+  border-bottom: dotted 1px #333;
+}
+
+table {
+  width: 100%;
+  background-color: #e3e3e3;
+  font:  20px Helvetica, sans-serif;
+} 
+
+table, th, td {
+  border: 1px solid;
+  text-align: center;
+
+}
+.button {
+	background-color: black;
+  color: orange;
+  font:  20px Helvetica, sans-serif;
+}
+
+.button:hover{
+	background-color:red;
+  color:yellow;
+}
+
+.img-box {
+	position:fixed;
+	top:10px;
+  right:20px;
+}

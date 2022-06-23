@@ -1,0 +1,58 @@
+{
+		"apiKey":"YOUR_apiKey_HERE",
+		"databaseURL":"https://rpidata-305119-default-rtdb.firebaseio.com/",
+		"storageBucket":"YOUR_storageBucket_HERE",
+		"messagingSenderId":"YOUR_messagingSenderId_HERE"
+	}
+
+Firebase
+https://firebase.google.com/docs/database/rest/retrieve-data
+
+https://firebase.google.com/docs/database/web/read-and-write
+
+https://iot-rpi-312d3-default-rtdb.firebaseio.com/AppData.json?print=pretty
+
+https://iot-rpi-312d3-default-rtdb.firebaseio.com/
+
+
+
+Firebase and Apps
+  https://community.kodular.io/t/firebase-database-a-guide-for-beginners/89647
+  https://www.youtube.com/watch?v=ES26E4r_uEU
+  https://ai2.metricrat.co.uk/guides/firebase-with-a-web-component
+
+  https://community.thunkable.com/t/how-to-get-list-of-all-keys-using-firebase-realtime-db/1327055/3
+
+Firebase in Repl
+  https://blog.replit.com/firebase
+  https://labs.bawi.io/updating-your-web-application-in-real-time-with-firebase-4e41c38a6bc1
+
+Javascript
+  https://sebhastian.com/display-javascript-variable-html/
+
+  https://www.jqueryscript.net/animation/Javascript-Animated-Gauges-Plugin-JustGage.html
+
+  
+
+Firebase and Rpi
+  https://www.youtube.com/watch?v=_cdQ0BsMt-Y
+  https://tutorial.cytron.io/2020/12/09/send-data-to-firebase-using-raspberry-pi/
+
+Sense Hat
+https://pythonhosted.org/sense-hat/api/
+
+https://projects.raspberrypi.org/en/projects/getting-started-with-the-sense-hat
+  
+Software
+You will need the latest version of Raspbian which already includes the following software packages:
+
+Python 3
+Sense HAT for Python 3
+If for any reason you need to install a package manually, follow these instructions:
+
+Install a software package on the Raspberry Pi
+Type this command into the terminal to install the Sense HAT package:
+
+sudo apt-get install sense-hat
+
+
